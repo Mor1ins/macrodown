@@ -2,9 +2,21 @@ require 'kramdown'
 require 'kramdown/converter'
 require 'kramdown/element'
 require 'kramdown/converter/html'
+require 'kramdown/converter/pdf'
+
 
 Kramdown::Element.class_eval do
   %i[theorem note def lemma result evidence].each { |b| Kramdown::Element::CATEGORY[b] = :block }
+end
+
+module Kramdown
+  module Converter
+    Pdf.class_eval do
+      def render_theorem
+
+      end
+    end
+  end
 end
 
 module Kramdown

@@ -9,6 +9,7 @@ GEM
     kramdown (1.17.0)
     minitest (5.11.3)
     pdf-core (0.7.0)
+    pdfkit (0.8.2)
     prawn (2.2.2)
       pdf-core (~> 0.7.0)
       ttfunk (~> 1.5)
@@ -16,6 +17,7 @@ GEM
       prawn (>= 1.3.0, < 3.0.0)
     rake (10.5.0)
     ttfunk (1.5.1)
+    wkhtmltopdf-binary (0.12.4)
 
 PLATFORMS
   ruby
@@ -25,9 +27,11 @@ DEPENDENCIES
   kramdown
   macrodown!
   minitest (~> 5.0)
+  pdfkit
   prawn
   prawn-table
   rake (~> 10.0)
+  wkhtmltopdf-binary
 
 BUNDLED WITH
    1.17.2
